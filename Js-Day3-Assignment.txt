@@ -1,0 +1,125 @@
+		JS_Assignment_Day-3
+==============================================================
+
+Q1. For the given JSON iterate over all for loops (for, for in, for of, forEach);
+var data=[
+    {person:"Prem",age:"24",company:"Guvi"},
+    {person:"Kumar",age:"28",company:"Guvi Geek"},
+    {person:"Devandla",age:"32",company:"Guvi Geek Network"},
+    {person:"Ranjith",age:"36",company:"Guvi Geek Network Pvt Ltd."},
+    ];
+//for loop
+for(let i=0;i<data.length;i++){
+    let user =data[i];
+    console.log(`
+    name: ${user.person}
+    age: ${user.age}
+    company: ${user.company}`)
+}
+//for in loop
+for(var index in data){
+    let user =data[index];
+    console.log(`
+    name: ${user.person}
+    age: ${user.age}
+    company: ${user.company}`);
+}
+//for of loop
+for(var key of data){
+    console.log(`
+    name: ${key.person}
+    age: ${key.age}
+    company: ${key.company}`);
+}
+//for Each loop
+data.forEach((user)=>{
+    console.log(`
+    name: ${user.person}
+    age: ${user.age}
+    company: ${user.company}`);
+});
+
+//output for all the loops :
+name: Prem
+age: 24
+company: Guvi
+
+name: Kumar
+age: 28
+company: Guvi Geek
+
+name: Devandla
+age: 32
+company: Guvi Geek Network
+
+name: Ranjith
+age: 36
+company: Guvi Geek Network Pvt Ltd.
+
+
+Q2. Create your own resume data in JSON format
+const resume = [
+    {
+    "Objective" : "For seeking an opportunity in a company,where I can dedicate my technical skills effectively and which gives me a chance to be a part of the team that excel in work towards the growth of the organization and also gives me satisfaction thereof."
+    },
+
+    {
+    "Skills" : ["javaScript","ReactJS","NodeJs","HTML5","CSS","Bootstrap"]
+    },
+
+    {
+    "Experience" : "5 Years"
+    },
+
+    {
+    "Projects" :[    
+            {
+                "project1" : "worked with Webasto,US (2012-14) on Parametric model creation using part and surface modelling and creating Assembly, Part level drawings with GD&T"
+            },
+            {
+                "project2" : "worked on GD&T, macros-code and played position of internal-team lead"
+            },
+            {
+                "project3" : "worked on evaluating the performance metrics of KTPS powerplant, Kottagudam"
+            },
+            {
+                "project4" : "Designed the operating parameters framework for efficient working of thermal power plant "
+            }]
+    },
+    {
+    "Education_details" : [{
+                    "Graduation" : "Mechanical Engg, JNTU KNR",
+                    "Intermediate" : "MPC, Master's Junior College,Karimangar",
+                    "SSC" : "Nikhil Bharat convent High School, Metpally"
+                }]
+   },
+   {
+    "Education_marks"  : [{
+        "graduation_marks" : "71%",
+        "intermediate_marks" : "92%",
+        "SSC_marks" : "80%"
+    }]
+   },
+   {
+    "Personal_Details" : [{
+        "FName" : "Prem Kumar",
+        "LName" : "Devandla",
+        "age": "30",
+        "email": "premkumar0331@gmail.com",
+        "Address" : [{
+                       "H:No." : "2-13",
+                       "Village": "Chittapur",
+                       "Mandal": "Mallapur",
+                       "Dist": "Jagityal",
+                       "PIN": "505325"
+                    }]
+    }]
+   }
+];
+
+
+
+
+
+
+
